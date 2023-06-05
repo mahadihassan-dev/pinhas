@@ -1,0 +1,149 @@
+/*
+Theme Name: iManifest
+Theme URI: https://imanifest.netlify.app
+Author: BdCalling IT
+Author URI: https://wordpress.org/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 6.0
+Tested up to: 5.4
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: iManifest
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Front End Developed By Mahadi hassan
+*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==== CSS index :: Start ====
+
+--> CSS Core Varriable Start
+--> Landing     - Home
+--> Landing     - Pricing
+--> Landing     - Checkout
+--> Landing     - Coming Soon
+--> Landing     - Login
+--> Landing     - Registration
+--> Landing     - 404 Page
+--> Dashboard   - Home
+--> Dashboard   - All Books
+--> Dashboard   - Audio
+--> Dashboard   - Videos
+--> Dashboard   - Courses
+--> Dashboard   - Insights
+--> Dashboard   - Guides
+--> Dashboard   - Forum Main
+--> Dashboard   - Forum Details
+--> Dashboard   - Write Forum
+--> Dashboard   - My Journals 
+--> Dashboard   - Journals Details
+--> Dashboard   - Write journal
+--> Dashboard   - User Profile (Formaly Known as My Account)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+:root {
+    --brand-100: #F3F8FE;
+    --brand-200: #E7F1FE;
+    --brand-300: #DAEAFD;
+    --brand-400: #B3D4FB;
+    --brand-500: #7BB4F7;
+    --brand-600: #0B75F1;
+    --brand-700: #0963CD;
+    --brand-800: #042954;
+    --brand-900: #031D3C;
+    --dash-bg: #fafcff;
+    --default: #fff;
+    --disable-text-color: #9C9CA4;
+    --btn-border-radius: 10px;
+    --border-property: 1px solid #0b75f1;
+    --global-background-color: #FAFCFF;
+    --global-font-color: #000000;
+    --global-dash-font: #9c9ca4;
+    --global-hover-color: #f0f7fe;
+    --global-bg-color: #f3f8fe;
+    --primary-font-color: #0b75f1;
+    --primary-font-color-1: #141522;
+    --primary-font-family: Poppins;
+    --primary-btn-color: #0b75f1;
+    --primary-font-color: #031D3C;
+    --third-font-color: #8D8D8D;
+    --secondary-font-color: #686A79;
+    --primary-font-family: "Poppins", sans-serif;
+    --global-transation: all linear .3s;
+    --global-border-radius: 9px;
+    --big-container: 1450px;
+    --s-m-container: 100%;
+  }
+  
+  * {
+    font-family: var(--primary-font-family);
+    box-sizing: border-box;
+  }
+  
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--primary-font-family);
+    background: var(--dash-bg);
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--primary-font-family);
+    color: var(--primary-font-color-1);
+  }
+  
+  p {
+    color: #2c2c2c;
+    font-family: var(--primary-font-family);
+  }
+  
+  a {
+    font-family: var(--primary-font-family);
+    text-decoration: none !important;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  hr {
+    height: 0;
+    border: 1px solid #e6eaee;
+  }
+  
+  /* Scrollbar :: Start */
+  *::-webkit-scrollbar,
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: .5em;
+  }
+  
+  *::-webkit-scrollbar-track,
+  html::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #e6eaee;
+    border-radius: 8px;
+  }
+  
+  *::-webkit-scrollbar-thumb,
+  html::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--brand-500);
+    outline: .5px solid var(--brand-200);
+    border-radius: 8px;
+  }
