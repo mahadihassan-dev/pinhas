@@ -23,6 +23,7 @@ Front End Developed By Mahadi hassan
     --hero-bg-color: #0f0a04;
     --secondary-color: #f7f552;
     --primary-font-family: 'Poppins', sans-serif;
+    --secondary-font-family: 'Jost', sans-serif;
 }
 
 * {
@@ -42,6 +43,14 @@ body {
     padding: 0;
     margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--secondary-font-family);
+}
 
 p {
     color: #2c2c2c;
@@ -56,18 +65,20 @@ ol {
     list-style: none;
 }
 
-/* --- Header :: Start --- */
+/* ===== Header :: Start ===== */
 .primary__header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
 }
 .header__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    padding: 20px 0px;
 }
 .header__col {
     width: 50%;
@@ -80,12 +91,19 @@ ol {
 .header__col.header__col-right .header__nav .primary__nav{
     text-align: end;
 }
+.header__col.header__col-right .header__nav .primary__nav ul li {
+    display: inline-block;
+}
 .header__col.header__col-right .header__nav .primary__nav ul li a{
     color: var(--secondary-color);
+    display: block;
+    padding: 0px 10px;
 }
-/* --- Header :: End --- */
+/* ===== Header :: End ===== */
 
-/* --- Home Page :: Start --- */
+/* ===== Home Page :: Start ===== */
+
+/* ---- Hero : Start ---- */
 .hero__wrapper {
     height: 80vh;
     display: flex;
@@ -96,5 +114,156 @@ ol {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    position: relative;
+    z-index: 1;
 }
-/* --- Home Page :: End --- */
+.hero__wrapper::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, .6); */
+    background-color: #2c2c2c81;
+    z-index: -1;
+}
+.hero__content h1.hero__content--title {
+    font-size: 56px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.hero__content h1.hero__content--title span {
+    color: var(--secondary-color);
+    
+}
+.hero__content h3.hero__content--subtitle {
+    font-size: 36px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.hero__content p.hero__content--description {
+    color: #fff;
+    padding: 0px 250px 0px 250px;
+    margin-bottom: 30px;
+}
+.hero__content ul.hero__content--tags li span {
+    color: #fff;
+}
+.hero__content ul.hero__content--tags li {
+    position: relative;
+}
+.hero__content ul.hero__content--tags li::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -15px;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+}
+.hero__content ul.hero__content--tags li:nth-last-child(1)::after {
+    display: none;
+}
+/* ---- Hero : End ---- */
+
+/* ---- About : Start ---- */
+.about__wrapper {
+    background: #999999;
+    padding: 60px;
+}
+.about__content {
+    text-align: center;
+}
+.about__content h3.about__content--title {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.about__content p.about__content--desctiption {
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 0px 270px;
+}
+.about__content p.about__content--desctiption:nth-last-child(1) {
+    margin-bottom: 0;
+}
+/* ---- About : End ---- */
+
+/* ---- Register User : Satrt ---- */
+.register__wrapper {
+    background: url(../images/register-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0px;
+}
+.register__wrapper::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c2c2c81;
+    z-index: -1;
+}
+.register__content {
+    text-align: center;
+}
+h3.register__content--title {
+    color: var(--secondary-color);
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+p.register__content--description {
+    color: #fff;
+    padding: 0px 355px;
+    margin-bottom: 30px;
+}
+form.register__form--home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+form.register__form--home input[type="email"].rfh__reg--email {
+    width: 450px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+form.register__form--home button[type="submit"].rfh__reg--b {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 250px;
+}
+p.register__content--reg-msg {
+    margin: 0;
+    padding: 0;
+}
+p.register__content--reg-msg {
+    padding: 0px 355px;
+    color: var(--secondary-color);
+}
+/* ---- Register User : End ---- */
+
+/* ===== Home Page :: End ===== */
+
+/* ===== Footer Page :: Start ===== */
+.primary__footer {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    text-align: center;
+}
+.primary__footer h3 {
+    margin: 0;padding: 0;
+}
+/* ===== Footer Page :: End ===== */

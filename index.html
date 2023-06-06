@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Icons -->
     <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
-    <!-- Font Poppins - font-family: 'Poppins', sans-serif; -->
+    <!-- Font Poppins - font-family: 'Poppins', sans-serif; , font-family: 'Jost', sans-serif;-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
 </head>
 <body>
     
@@ -35,7 +35,9 @@
                     <div class="header__nav">
                         <nav class="primary__nav">
                             <ul class="p-0 m-0">
+                                <!-- This Item for translate -->
                                 <li><a href="#">עִברִית</a></li>
+                                <li><a href="form.html">Form</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -52,12 +54,12 @@
         <section id="hero" class="hero__wrapper">
             <div class="container">
                 <div class="hero__content text-center">
-                    <h1>Welcome To <br> <span>SOW 26</span></h1>
-                    <h3>"A Positive Mindset can achieve anything"</h3>
-                    <p>SOW26 is based on a cambination of simple practice through which we can create a positive
+                    <h1 class="hero__content--title">Welcome To <br> <span>SOW 26</span></h1>
+                    <h3 class="hero__content--subtitle">"A Positive Mindset can achieve anything"</h3>
+                    <p class="hero__content--description">SOW26 is based on a cambination of simple practice through which we can create a positive
                         new rea'ity. The path toa new realty' is based on the Sörne process in which the Bible descnbes
-                        the creation Of the World.</p>
-                    <ul class="m-0 p-0">
+                        the creation Of the World:</p>
+                    <ul class="hero__content--tags m-0 p-0">
                         <li class="d-inline-block mx-2">
                             <span>Thought</span>
                         </li>
@@ -72,13 +74,47 @@
             </div>
         </section>
         <!-- Hero :: End -->
+        <!-- About us :: Start -->
+        <section id="about-us" class="about__wrapper">
+            <div class="container">
+                <div class="about__content">
+                    <h3 class="about__content--title">Seeds of thought</h3>
+                    <p class="about__content--desctiption">To date, SOW26has helped hundrads of people   all over the world by sending them personally crafted sentences which were tailor-made to suit and overcome the problems they wish to solve or change. We call these sentences "Seeds of thought".</p>
+                    <p class="about__content--desctiption">Each unique Sentence focuses on a specific issue you face and you wish to solve or change, in order to create new and better reality of yourslef.</p>
+                </div>
+            </div>
+        </section>
+        <!-- About us :: End -->
+        <!-- Register User :: Start -->
+        <section id="register" class="register__wrapper">
+            <div class="container">
+                <div class="register__content">
+                    <h3 class="register__content--title">SOW26</h3>
+                    <p class="register__content--description">We are sharing with you this revolutionary which will lead to personal enlightment in anyone who needs it, anywhere in the world.</p>
+                    <p class="register__content--description">In order to help people, we have to decide to share with the world the "Seeds of thought which we have composed and adapted especially for you in order to create a reality which is both healthier and  more positive.</p>
+                    <form id="register-form--home" action="" class="register__form--home my-4">
+                        <!-- rf : Register Form -->
+                        <div class="rf__email">
+                            <!-- rfh : register form - Home -->
+                            <input type="email" name="email" id="rfh__reg-email" value="" placeholder="Please leave your Email Address here" class="form-control rfh__reg--email" required>
+                        </div>
+                        <!-- rf : Register Form -->
+                        <div class="rf__register--btn">
+                            <button id="rfh__reg-btn" class="rfh__reg--b btn btn-dark" type="submit">Regsiter Today</button>
+                        </div>
+                    </form>
+                    <p class="register__content--reg-msg">We invite you to practice the "Seeds of thought" and share them with your friends and relatives.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Register User :: End -->
     </main>
     <!-- Main :: End -->
 
     <!-- Footer :: Start -->
     <footer id="footer" class="primary__footer">
         <div class="container">
-
+            <h3>SOW26 SOW UP YOUR LIFE</h3>
         </div>
     </footer>
     <!-- Footer :: End -->
